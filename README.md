@@ -2,7 +2,7 @@
 
 Francisco Jesús Moya Guillem
 
-This project was carried out as a Technical Test in order to a position within the organization.
+This project was carried out as a Technical Test in order to access to a position within the organization.
 
 The project has been developed under the following requirements:
 
