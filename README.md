@@ -49,6 +49,9 @@ The project has been developed under the following requirements:
 
 Assumptions made in order to develop the test:
 
+- The input data will be entered into the "Inputs.txt" file.
+
+
 - The robot must check that it will not go outside the grid, and it will be kept on the preestablished boundaries and limits.
 
 
@@ -84,15 +87,19 @@ The project has been developed using a hexagonal architecture and Domain Driven 
 
 An orchestrator called Driver has been created, which is responsible for instantiating all domain classes and handles the application logic.
 
+Since the project is in the experimental phase, and it is assumed that there are no interfaces, an "Inputs.txt" file has been created to enter the variables that will serve as input for the cleaning program.
+
 In this project, objects cannot be instantiated using their default constructors. It is necessary to use the various setters and getters to interact. This decision has been given the fact that the environment is still experimental and user safety must be prioritized. Therefore, strong error handling and validations have been implemented to ensure all inputs have the correct format.
 
 Function reuse has been maximized to avoid unnecessary and hard-to-maintain code.
+
+Since the project is in the testing phase and users don't yet have the tools to use it, the project organization has been built to make it as easy as possible for other users or programmers to use it. There are no checks, data conversions, scenarios, or robots to implement. Simply call the startCleaningProgram() function and fill out "Inputs.txt." The system works if the entered data is correct. If not, any errors in the data entered are displayed in the console for correction. This provides an easy-to-use testing environment.
 
 It is worth mentioning that despite my knowledge of Java, I chose to use Kotlin for the first time to take on a greater challenge and demonstrate my adaptability to any type of language. I invested a total of 2 hours reading documentation and watching online courses to learn how it works.
 
 This project has taken a total of 9 hours and 45 minutes in order to be completed. Time has been invested in the following phases:
 - 30 minutes for gathering requirements and assumptions
-- 2 Hours for Kotlin's adaptation
+- 2 hours for Kotlin's adaptation
 - 6 hours at programming
 - 30 minutes for testing
 - 45 minutes for develop final documentations
